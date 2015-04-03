@@ -7,6 +7,7 @@
 <title>No Images Template</title>
 </head>
 
+<script type="text/javascript">
 // select the right Ad Id according to platform
     var admobid = {};
     if( /(android)/i.test(navigator.userAgent) ) { // for android
@@ -27,6 +28,8 @@ if(AdMob) AdMob.prepareInterstitial( {adId:admobid.interstitial, autoShow:false}
 
 // show the interstitial later, e.g. at end of game level
 if(AdMob) AdMob.showInterstitial();
+
+</script>
 
 <body>
 
